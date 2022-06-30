@@ -1,3 +1,9 @@
+# Export
+
+poetry run python net_to_model.py --cfg configs/192x15-20211003-0400.yaml weights/20211003_no_753522_192x15.tar.gz
+poetry run python train.py --cfg configs/192x15-20211003-0400.yaml --output weights/
+
+
 # Training
 
 The training pipeline resides in `tf`, this requires tensorflow running on linux (Ubuntu 16.04 in this case). (It can be made to work on windows too, but it takes more effort.)

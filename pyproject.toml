@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "export-lc0"
+version = "0.1.0"
+description = "Export the official lc0 model with tensorflow"
+authors = ["Patrick Frank <patr.frank@gmx.de>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+numpy = "^1.13.3"
+tensorflow = "^2.5.1"
+protobuf = "^3.12.1"
+PyYAML = "^6.0"
+dvc = "^2.11.0"
+torch = "^1.12.0"
+tf2onnx = "^1.11.1"
+onnx = "^1.12.0"
+
+
+[tool.poetry.dev-dependencies]
+
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

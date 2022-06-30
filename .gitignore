@@ -1,3 +1,7 @@
+# custom files
+.vscode
+leelalogs
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

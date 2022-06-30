@@ -238,12 +238,12 @@ class TFProcess:
             self.strategy = tf.distribute.MirroredStrategy()
             tf.distribute.experimental_set_strategy(self.strategy)
         else:
-            gpus = tf.config.experimental.list_physical_devices('GPU')
-            print(gpus)
-            tf.config.experimental.set_visible_devices(gpus[self.cfg['gpu']],
-                                                       'GPU')
-            tf.config.experimental.set_memory_growth(gpus[self.cfg['gpu']],
-                                                     True)
+            # gpus = tf.config.experimental.list_physical_devices('GPU')
+            # print(gpus)
+            # tf.config.experimental.set_visible_devices(gpus[self.cfg['gpu']],
+            #                                            'GPU')
+            # tf.config.experimental.set_memory_growth(gpus[self.cfg['gpu']],
+            #                                          True)
             self.strategy = None
         if self.model_dtype == tf.float16:
             tf.keras.mixed_precision.experimental.set_policy('mixed_float16')
